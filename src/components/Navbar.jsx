@@ -6,26 +6,24 @@ export default function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-white shadow-md px-4 py-3 flex items-center justify-between">
-      {/* LOGO */}
-      <NavLink to="/" className="flex items-center">
-        <img
-          src="/img/logo_aletrade_horizontal_200px.png"
-          alt="Logo Aletrade"
-          className="h-14 w-auto bg-gray-200 p-1 rounded shadow"
-        />
-      </NavLink>
+    <nav className="bg-white shadow-md px-4 py-3 flex flex-col md:flex-row items-center justify-between sticky top-0 z-50">
+      {/* LOGO y Botón hamburguesa */}
+      <div className="flex items-center justify-between w-full md:w-auto">
+        <NavLink to="/" className="flex items-center">
+          <img
+            src="/img/logo_aletrade_horizontal_200px.png"
+            alt="Logo Aletrade"
+            className="h-14 w-auto bg-gray-200 p-1 rounded shadow"
+          />
+        </NavLink>
 
-      {/* Botón hamburguesa */}
-      <button
-        onClick={toggleMenu}
-        className="md:hidden text-gray-700 focus:outline-none"
-      >
-        ☰
-      </button>
-    </nav>
-  );
-}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-gray-700 focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
 
       {/* Menú de enlaces */}
       <ul
@@ -37,7 +35,9 @@ export default function Navbar() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-blue-600 font-semibold border-b-2 border-blue-600" : "text-gray-600"
+              isActive
+                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                : "text-gray-600"
             }
           >
             Inicio
@@ -47,7 +47,9 @@ export default function Navbar() {
           <NavLink
             to="/recursos"
             className={({ isActive }) =>
-              isActive ? "text-blue-600 font-semibold border-b-2 border-blue-600" : "text-gray-600"
+              isActive
+                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                : "text-gray-600"
             }
           >
             Recursos
@@ -57,7 +59,9 @@ export default function Navbar() {
           <NavLink
             to="/miarea"
             className={({ isActive }) =>
-              isActive ? "text-blue-600 font-semibold border-b-2 border-blue-600" : "text-gray-600"
+              isActive
+                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                : "text-gray-600"
             }
           >
             Mi Área
@@ -67,7 +71,9 @@ export default function Navbar() {
           <NavLink
             to="/sobremi"
             className={({ isActive }) =>
-              isActive ? "text-blue-600 font-semibold border-b-2 border-blue-600" : "text-gray-600"
+              isActive
+                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                : "text-gray-600"
             }
           >
             Sobre mí
@@ -77,7 +83,9 @@ export default function Navbar() {
           <NavLink
             to="/servicios"
             className={({ isActive }) =>
-              isActive ? "text-blue-600 font-semibold border-b-2 border-blue-600" : "text-gray-600"
+              isActive
+                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                : "text-gray-600"
             }
           >
             Servicios
@@ -87,7 +95,9 @@ export default function Navbar() {
           <NavLink
             to="/formacion"
             className={({ isActive }) =>
-              isActive ? "text-blue-600 font-semibold border-b-2 border-blue-600" : "text-gray-600"
+              isActive
+                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                : "text-gray-600"
             }
           >
             Formación

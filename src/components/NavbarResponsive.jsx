@@ -16,7 +16,7 @@ const NavbarResponsive = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md p-4">
+    <nav className="bg-white shadow-md p-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" onClick={closeMenu}>
