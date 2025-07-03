@@ -8,17 +8,17 @@ const Contacto = () => {
       <div className="mb-8">
         <h2 className="text-xl font-semibold mb-2">📩 Envíame tu mensaje</h2>
         <div className="flex justify-center">
-          <div className="w-full max-w-4xl h-[600px]">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSc4YF8STHUXpB_bbszgznsGsJqAxcLYtLIfp2wdCqME7hVjuw/viewform?embedded=true"
-              width="100%"
-              height="1500"
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
-              title="Formulario de contacto"
-              className="border rounded-lg shadow-md"
-              style={{ filter: "opacity(1)" }}
+          <div className="w-full max-w-4xl">
+          <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSc4YF8STHUXpB_bbszgznsGsJqAxcLYtLIfp2wdCqME7hVjuw/viewform?embedded=true"
+          width="100%"
+          height="1200"
+          style={{ border: 'none' }}
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          title="Formulario de contacto"
+          className="border rounded-lg shadow-md"
             >
               Cargando…
             </iframe>
@@ -44,9 +44,10 @@ const Contacto = () => {
             display: none;
           }
           /* Oculta mensaje de "Iniciar sesión en Google..." */
-          iframe[src*="google"] {
-            height: 600px !important;
-          }
+          // iframe[src*="google"] {
+          //   height: 600px !important;
+          // }
+
           .freebirdFormviewerViewHeader,
           .freebirdFormviewerViewNavigationLeftHeader,
           .freebirdFormviewerViewNavigationNoSubmitHeader,
