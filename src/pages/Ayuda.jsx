@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Ayuda() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 text-gray-800">
@@ -16,7 +18,7 @@ export default function Ayuda() {
 
         <div>
           <h2 className="font-semibold">¿Cómo puedo solicitar un presupuesto personalizado?</h2>
-          <p>Puedes utilizar el <a href="/contacto" className="text-blue-600 underline">formulario de contacto</a> o escribirme directamente a info@aletrade.com indicando tus necesidades y te responderé lo antes posible.</p>
+          <p>Puedes utilizar el <Link to="/contacto" className="text-blue-600 underline hover:text-blue-800">formulario de contacto</Link> o escribirme directamente a info@aletrade.com indicando tus necesidades y te responderé lo antes posible.</p>
         </div>
 
         <div>
