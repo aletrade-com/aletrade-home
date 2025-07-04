@@ -1,5 +1,6 @@
 import AvisoLegal from "./pages/AvisoLegal";
 import Privacidad from "./pages/Privacidad";
+import Ayuda from "./pages/Ayuda";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/confirmacion" element={<Confirmacion />} />
         <Route path="/aviso-legal" element={<AvisoLegal />} />
         <Route path="/privacidad" element={<Privacidad />} />
+        <Route path="/ayuda" element={<Ayuda />} />
       </Routes>
 
       <Footer />
