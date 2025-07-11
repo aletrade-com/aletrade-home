@@ -29,12 +29,12 @@ const NavbarResponsive = () => {
         </div>
         <div className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-blue-500">Inicio</Link>
-          <Link to="/servicios" className="hover:text-blue-500">Servicios</Link>
-          <Link to="/formacion" className="hover:text-blue-500">Formación</Link>
           <Link to="/recursos" className="hover:text-blue-500">Recursos</Link>
           <Link to="/sobre-mi" className="hover:text-blue-500">Sobre mí</Link>
-          <Link to="/mi-area" className="hover:text-blue-500">Mi Área</Link>
           <Link to="/contacto" className="hover:text-blue-500">Contacto</Link>
+          <span className="text-gray-400 block px-4 py-2"title="Sección aún no disponible">Servicios</span>
+          <span className="text-gray-400 block px-4 py-2"title="Sección aún no disponible">Formación</span>
+          <span className="text-gray-400 block px-4 py-2"title="Sección aún no disponible">Mi Área</span>
         </div>
         <div className="md:hidden">
           <button onClick={handleMenuToggle}>
@@ -45,12 +45,12 @@ const NavbarResponsive = () => {
       {isMenuOpen && (
   <div className="md:hidden mt-4 px-2 space-y-2">
     <Link to="/" className="block" onClick={closeMenu}>Inicio</Link>
-    <span className="block text-gray-400 cursor-default">Servicios (próximamente)</span>
-    <span className="block text-gray-400 cursor-default">Formación (próximamente)</span>
     <Link to="/recursos" className="block" onClick={closeMenu}>Recursos</Link>
     <Link to="/sobre-mi" className="block" onClick={closeMenu}>Sobre mí</Link>
-    <span className="block text-gray-400 cursor-default">Mi Área (próximamente)</span>
     <Link to="/contacto" className="block" onClick={closeMenu}>Contacto</Link>
+    <span className="block text-gray-400 cursor-default">Servicios</span>
+    <span className="block text-gray-400 cursor-default">Formación</span>
+    <span className="block text-gray-400 cursor-default">Mi Área</span>
   </div>
 )}
     </nav>
