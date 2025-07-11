@@ -56,17 +56,8 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/miarea"
-            className={({ isActive }) =>
-              isActive
-                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
-                : "text-gray-600"
-            }
-          >
-            Mi Área
-          </NavLink>
-        </li>
+  <span className="text-gray-400 cursor-not-allowed" title="Próximamente">Mi Área</span>
+</li>
         <li>
           <NavLink
             to="/sobremi"
@@ -80,29 +71,11 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/servicios"
-            className={({ isActive }) =>
-              isActive
-                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
-                : "text-gray-600"
-            }
-          >
-            Servicios
-          </NavLink>
-        </li>
+  <span className="text-gray-400 cursor-not-allowed" title="Próximamente">Servicios</span>
+</li>
         <li>
-          <NavLink
-            to="/formacion"
-            className={({ isActive }) =>
-              isActive
-                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
-                : "text-gray-600"
-            }
-          >
-            Formación
-          </NavLink>
-        </li>
+  <span className="text-gray-400 cursor-not-allowed" title="Próximamente">Formación</span>
+</li>
       </ul>
     </nav>
   );

@@ -43,16 +43,16 @@ const NavbarResponsive = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden mt-4 px-2 space-y-2">
-          <Link to="/" className="block" onClick={closeMenu}>Inicio</Link>
-          <Link to="/servicios" className="block" onClick={closeMenu}>Servicios</Link>
-          <Link to="/formacion" className="block" onClick={closeMenu}>Formación</Link>
-          <Link to="/recursos" className="block" onClick={closeMenu}>Recursos</Link>
-          <Link to="/sobre-mi" className="block" onClick={closeMenu}>Sobre mí</Link>
-          <Link to="/mi-area" className="block" onClick={closeMenu}>Mi Área</Link>
-          <Link to="/contacto" className="block" onClick={closeMenu}>Contacto</Link>
-        </div>
-      )}
+  <div className="md:hidden mt-4 px-2 space-y-2">
+    <Link to="/" className="block" onClick={closeMenu}>Inicio</Link>
+    <span className="block text-gray-400 cursor-default">Servicios (próximamente)</span>
+    <span className="block text-gray-400 cursor-default">Formación (próximamente)</span>
+    <Link to="/recursos" className="block" onClick={closeMenu}>Recursos</Link>
+    <Link to="/sobre-mi" className="block" onClick={closeMenu}>Sobre mí</Link>
+    <span className="block text-gray-400 cursor-default">Mi Área (próximamente)</span>
+    <Link to="/contacto" className="block" onClick={closeMenu}>Contacto</Link>
+  </div>
+)}
     </nav>
   );
 };
