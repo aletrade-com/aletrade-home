@@ -1,6 +1,7 @@
 import AvisoLegal from "./pages/AvisoLegal";
 import Privacidad from "./pages/Privacidad";
 import Ayuda from "./pages/Ayuda";
+import Proximamente from "./pages/Proximamente";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -36,11 +37,11 @@ export default function App() {
             </div>
           }
         />
-        <Route path="/servicios" element={<Servicios />} />
-        <Route path="/formacion" element={<Formacion />} />
+        <Route path="/servicios" element={<Proximamente />} />
+        <Route path="/formacion" element={<Proximamente />} />
         <Route path="/recursos" element={<Recursos />} />
         <Route path="/sobre-mi" element={<SobreMi />} />
-        <Route path="/mi-area" element={<MiArea />} />
+        <Route path="/mi-area" element={<Proximamente />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/confirmacion" element={<Confirmacion />} />
         <Route path="/aviso-legal" element={<AvisoLegal />} />
