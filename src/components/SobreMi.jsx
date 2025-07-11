@@ -17,18 +17,22 @@ export default function SobreMi() {
 
         {/* Texto y botón */}
         <div className="text-gray-700 text-lg space-y-5">
-          <p>
-            👋 ¡Hola! Soy <strong>Alejandro Barros</strong>, profesional con amplia experiencia en administración, contabilidad y gestión documental.
-          </p>
-          <p>
-            Me especializo en ofrecer un servicio personalizado, fiable y adaptado a las necesidades reales de autónomos, pymes y personas que buscan organizar sus finanzas o su negocio con eficiencia.
-          </p>
-          <p>
-            Trabajo con herramientas digitales modernas, y combino la experiencia humana con el poder de la inteligencia artificial para ayudarte a tomar mejores decisiones, ahorrar tiempo y evitar errores.
-          </p>
-          <p>
-            Si valoras la confidencialidad, la claridad y la cercanía, estaré encantado de acompañarte en tu camino profesional o personal.
-          </p>
+         <p>
+  👋 ¡Hola! Soy <strong>Alejandro Barros</strong>, profesional con más de 20 años de experiencia en administración, contabilidad y gestión documental.
+</p>
+<p>
+  Tras una extensa trayectoria profesional en múltiples empresas y sectores, he decidido emprender un proyecto propio donde pongo al servicio de los demás todo el conocimiento y experiencia acumulados a lo largo de mi carrera.
+</p>
+<p>
+  Mi objetivo es ayudarte a organizar tus finanzas personales o profesionales mediante recursos prácticos como plantillas en Excel y LibreOffice, basadas en casos reales y en una metodología clara, sencilla y eficiente.
+</p>
+<p>
+  Estos recursos están pensados para emprendedores, empresarios y cualquier persona que desee llevar un mayor control de sus ingresos, gastos, patrimonio o contabilidad, tanto a nivel personal como profesional.
+</p>
+<p>
+  Si valoras la claridad, la privacidad y la utilidad práctica, estaré encantado de acompañarte con soluciones accesibles y fáciles de implementar.
+</p>
+
 
           <div className="space-y-2">
             <p className="text-sm text-gray-500 italic">
