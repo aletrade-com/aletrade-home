@@ -22,21 +22,7 @@ export default function App() {
      <NavbarResponsive />
 
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="p-6 text-center">
-              <h1 className="text-4xl font-bold text-blue-600 mb-4">Bienvenido a Aletrade</h1>
-              <p className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded mb-6" role="alert">🔒 Demo privada</p>
-              <p>Estás accediendo a una versión de demostración en desarrollo. El contenido puede cambiar sin previo aviso.</p>
-              <p className="text-gray-700 text-lg">
-                Desde aquí tendrás acceso a servicios con IA, finanzas personales,
-                apoyo administrativo y mucho más.
-                Pronto el menú y otras secciones estarán activas.
-              </p>
-            </div>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/servicios" element={<Proximamente />} />
         <Route path="/formacion" element={<Proximamente />} />
         <Route path="/recursos" element={<Recursos />} />
