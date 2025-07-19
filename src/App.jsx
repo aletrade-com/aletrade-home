@@ -3,7 +3,7 @@ import Privacidad from "./pages/Privacidad";
 import Ayuda from "./pages/Ayuda";
 import Proximamente from "./pages/Proximamente";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import Servicios from "./components/Servicios";
@@ -19,7 +19,7 @@ import NavbarResponsive from "./components/NavbarResponsive";
 export default function App() {
   return (
     <Router>
-     <NavbarResponsive />
+      <NavbarResponsive />
 
       <Routes>
         <Route path="/" element={<Home />} />
